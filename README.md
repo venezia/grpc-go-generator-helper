@@ -126,7 +126,7 @@ protoc /input/api/api.proto -I /usr/include/ -I /input/api/ -I /go/src/github.co
 
 #### Creating API Documentation
 ```bash
->docker run --rm=true -it -v /projects/my-cool-project:/input quay.io/venezia/grpc-go-generator-helper:latest /scripts/api-docs.sh
+docker run --rm=true -it -v /projects/my-cool-project:/input quay.io/venezia/grpc-go-generator-helper:latest /scripts/api-docs.sh
 Defaulting to /input as the PROJECT_DIRECTORY
 Defaulting to /usr/include as the PROTOBUF_LIBRARY_LOCATION
 Defaulting to /input/api as the INPUT_API_DIRECTORY
